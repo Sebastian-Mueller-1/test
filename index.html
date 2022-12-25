@@ -278,23 +278,6 @@
                 dfStyler.set_table_styles([dict(selector='th', props=[('text-align', 'left')])])
 
 
-            def happiness_index(self, object1, operator, object2):
-
-                reference_dict = {"Time":0, "Population":1, "Assets":2, "F-Nonrenewables":3, "GDP":4}
-                hap_array = []
-                object1_index = reference_dict[object1]
-                object2_index = reference_dict[object2]
-
-                for i in range(0,5001):
-
-                    if operator == "/":
-                        value = self.master_array[object1]/self.master_array[object2]
-
-                    if operator == "*":
-                        value = self.master_array[object1]/self.master_array[object2]
-
-
-
 
         test= EmergyModel()
         # #test.run_model() # this bugs it why?
