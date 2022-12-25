@@ -17,10 +17,34 @@
 </head>
 
 <body>
-    <div id="centroids" style="width: 100%; height: 100%"></div>
+    <!--<div id="centroids" style="width: 100%; height: 100%"></div>
     <py-script src="./script.py" output="centroids">
 
-    </py-script>
+    </py-script> -->
+    
+
+    <div id="matplotlib-lineplot"></div>
+    <py-script output="matplotlib-lineplot">
+        # Python Code
+
+        # importing the matplotlib library
+        import matplotlib.pyplot as plt
+        fig, ax = plt.subplots()
+        # x axis
+        x = ["Python", "C++", "JavaScript", "Golang"]
+        # y axis
+        y = [10, 5, 9, 7]
+        plt.plot(x, y, marker='o', linestyle='-', color='b')
+        # Naming the x-label
+        plt.xlabel('Language')
+        # Naming the y-label
+        plt.ylabel('Score')
+        # Naming the title of the plot
+        plt.title('Language vs Score')
+        fig
+     </py-script>
+    
+    
 </body>
 
 </html>
