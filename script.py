@@ -274,4 +274,5 @@ test= EmergyModel()
 # #test.run_model() # this bugs it why?
 # test.percent_change(.9)
 # print(test.percent_change_df)
+test.graph_model()
 
