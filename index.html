@@ -18,8 +18,21 @@
 
 <body>
     <div id="centroids" style="width: 100%; height: 100%"></div>
-    <py-script src="./script.py" output="centroids">
+    <!<py-script src="./script.py" output="centroids">
+    </py-script>>
+    
     </py-script>
+    import matplotlib.pyplot as plt
+
+    x=[1,3,5,7]
+    y=[2,4,6,1]
+    plt.plot(x,y)
+    plt.xlabel('X-axis')
+    plt.ylabel('Y-axis')
+    plt.title("A simple line graph")
+    plt.show()
+    <py-script>
+    
 </body>
 
 </html>
