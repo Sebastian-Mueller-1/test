@@ -13,8 +13,16 @@ class Foo():
     # Call plot() method on the appropriate object
     ax[0].plot(x, np.sin(x))
     ax[1].plot(x, np.cos(x))
-    fig
+    return fig
+  
+  def return_graph(self): 
+    figg = self.graph()
+    figg
+    
 
+    
 test = Foo()
-test.graph()
+test.return_graph()
+
+
 print("hello")
