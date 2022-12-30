@@ -18,7 +18,7 @@ class Foo():
 
     
 test = Foo()
-test.return_graph()
+test.graph()
 
 
 print("hello")
