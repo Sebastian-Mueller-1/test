@@ -7,11 +7,13 @@ class Foo():
     pass
   
   def graph(self):
-    xpoints = np.array([1, 8])
-    ypoints = np.array([3, 10])
+    x = np.linspace(0, 10, 100)
+    fig, ax = plt.subplots(2)
 
-    plt.plot(xpoints, ypoints)
-    plt.show()
+    # Call plot() method on the appropriate object
+    ax[0].plot(x, np.sin(x))
+    ax[1].plot(x, np.cos(x))
+    fig
 
 test = Foo()
 test.graph()
