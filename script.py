@@ -13,7 +13,7 @@ class Foo():
     # Call plot() method on the appropriate object
     ax[0].plot(x, np.sin(x))
     ax[1].plot(x, np.cos(x))
-    plt.show()
+    fig.show()
 
 test = Foo()
 test.graph()
