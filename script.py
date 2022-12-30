@@ -17,3 +17,4 @@ class Foo():
 
 test = Foo()
 test.graph()
+print("hello")
