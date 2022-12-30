@@ -14,10 +14,6 @@ class Foo():
     ax[0].plot(x, np.sin(x))
     ax[1].plot(x, np.cos(x))
     return fig
-  
-  def return_graph(self): 
-    figg = self.graph()
-    figg
     
 
     
