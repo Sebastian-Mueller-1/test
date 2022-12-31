@@ -18,7 +18,7 @@ class Foo():
 
     
 test = Foo()
-test.graph()
-
+figg = test.graph()
+figg
 
 print("hello")
