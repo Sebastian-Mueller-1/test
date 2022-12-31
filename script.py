@@ -4,7 +4,7 @@ import copy
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd 
-
+print("start")
 class EmergyModel():
 
     def __init__(self):
