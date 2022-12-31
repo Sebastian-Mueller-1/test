@@ -13,11 +13,11 @@ class Foo():
     # Call plot() method on the appropriate object
     ax[0].plot(x, np.sin(x))
     ax[1].plot(x, np.cos(x))
-    return fig
+    fig
     
 
     
 test = Foo()
-figg = test.graph()
-figg
+test.graph()
+
 
