@@ -183,5 +183,6 @@ class EmergyModel():
          
 
 test= EmergyModel()
+print("about to call graph method")
 test.graph_model()
 print("end of script")
