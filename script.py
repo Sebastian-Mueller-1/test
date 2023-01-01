@@ -132,7 +132,7 @@ class EmergyModel():
 
 
     def graph_model(self):
-        print("graph model enter)
+        print("graph model enter")
         self.run_model()
         
         #split apart master array into temp arrays to make plot
