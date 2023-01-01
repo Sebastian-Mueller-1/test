@@ -84,6 +84,7 @@ class EmergyModel():
                            'sw2': 0, 
                            'gdp': 0,
                            'counter': 0}
+        print("finished init")
 
     def run_model(self):
             print("enter model")
