@@ -131,7 +131,7 @@ class EmergyModel():
 
 
     def graph_model(self):
-        
+        print("graph model enter)
         self.run_model()
         
         #split apart master array into temp arrays to make plot
@@ -173,7 +173,7 @@ class EmergyModel():
         ax1.legend(lns, labs, loc=0)
 
         self.para_dict = copy.deepcopy(self.para_dict_reference) # reset parameters to initial value
-        
+        print("graph model end")
         fig
     
 
@@ -184,3 +184,4 @@ class EmergyModel():
 
 test= EmergyModel()
 test.graph_model()
+print("end of script")
