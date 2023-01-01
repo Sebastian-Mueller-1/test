@@ -4,7 +4,7 @@ import copy
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd 
-print("start")
+print("pre class start")
 class EmergyModel():
 
     def __init__(self):
@@ -86,7 +86,7 @@ class EmergyModel():
                            'counter': 0}
 
     def run_model(self):
-            print("enter loop")
+            print("enter model")
             # main model loop
             while self.para_dict['t'] < 2350:
 
@@ -127,7 +127,7 @@ class EmergyModel():
                 values_to_append= [self.para_dict['t'],self.para_dict['n'],tempa,self.para_dict['f'],tempgdp]
                 self.master_array[self.para_dict['counter']]= values_to_append
                 self.para_dict['counter'] += 1
-           print("end loop")
+            print("end loop")
 
 
     def graph_model(self):
