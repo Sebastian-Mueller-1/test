@@ -194,9 +194,12 @@
                     print("graph model end")
                     print("print fig object", fig)
                     
-                    display(fig)
+                    display(fig, target = "myClass")
     
         </py-script>
-    </body>
+   <div id="myClass"></div>
+   <button id="my-button" py-onClick="EmergyModel()">Click me</button>
+   </body>
+            
 
 </html>
