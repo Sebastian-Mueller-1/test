@@ -110,8 +110,8 @@
 
                             
                             if self.para_dict['t'] > 1950:
-                                self.para_dict['sw1'] = 1
-                                self.para_dict['sw2'] = 1
+                                   self.para_dict['sw1'] = 1
+                                   self.para_dict['sw2'] = 1
 
                             self.para_dict['r'] = self.para_dict['j'] / (1 + self.para_dict['k1'] * self.para_dict['f'] * self.para_dict['n'] * self.para_dict['a'] + (self.para_dict['k2'] * self.para_dict['a']))
 
@@ -129,11 +129,11 @@
 
                             self.para_dict['n'] = self.para_dict['n']+(self.para_dict['b']-self.para_dict['d']) * self.para_dict['dt']
                             if self.para_dict['n'] < 0.01:
-                                self.para_dict['n'] = 0.01
+                                   self.para_dict['n'] = 0.01
 
                             self.para_dict['a'] = self.para_dict['a'] + self.para_dict['dA'] * self.para_dict['dt']
                             if self.para_dict['a'] < 1:
-                                self.para_dict['a'] = 1
+                                   self.para_dict['a'] = 1
 
                             self.para_dict['gdp'] = self.para_dict['k3']*self.para_dict['r']*self.para_dict['f']*self.para_dict['n']*self.para_dict['a']+self.para_dict['k4']*self.para_dict['r']*self.para_dict['a']
                             self.para_dict['t']= self.para_dict['t']+self.para_dict['dt']
