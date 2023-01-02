@@ -176,8 +176,8 @@ class EmergyModel():
         self.para_dict = copy.deepcopy(self.para_dict_reference) # reset parameters to initial value
         print("graph model end")
         print("print fig object", fig)
-        plt.display(fig)
-        print("just tried to display")
+        
+        return fig
     
 
 
