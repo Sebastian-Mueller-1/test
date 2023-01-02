@@ -177,6 +177,7 @@ class EmergyModel():
         print("graph model end")
         print("print fig object", fig)
         display(fig)
+        print("just tried to display")
     
 
 
