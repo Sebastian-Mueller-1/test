@@ -1,49 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-	<title>BEE529 Final Project</title>
-</head>
-<body>
-	
-	<div>
-		<h2>Please ignore the watermarks, a few of the gifs were too large and I needed to use a website to compress the file size </br>
-		Simulation 1: alpha = .01, beta = .15, gamma = .2, mrate = .05, inital burn 5000 trees </h2>
-		<img src="./assets/images/final_burn_test1.gif" alt="GIF 1">
-	</div>
-	
-	<div>
-		<h2>Simulation 2: alpha = .001, beta = .15, gamma = .2, mrate = .05, inital burn 5000 trees</h2>
-		<img src="./assets/images/final_burn_test2.gif" alt="GIF 2">
-	</div>
-	
-	<div>
-		<h2>simulation 3: alpha = .001, beta = .19, gamma = .2, mrate = .05, inital burn 5000 trees</h2>
-		<img src="./assets/images/final_burn_test3.gif" alt="GIF 3">
-	</div>
-	
-	<div>
-		<h2>simulation 4: alpha = .001, beta = .19, gamma = .3, mrate = .05, inital burn 5000 trees</h2>
-		<img src="./assets/images/final_burn_test6.gif" alt="GIF 3">
-	</div>
-		<div>
-		<h2>Simulation 5: alpha = .001, beta = .1, gamma = .2, mrate = .05, inital burn 5000 trees</h2>
-		<img src="./assets/images/final_burn_test5.gif" alt="GIF 2">
-	</div>
-	
-	<div>
-		<h2>simulation 6: alpha = .001, beta = .25, gamma = .2, mrate = .05, inital burn 5000 trees </h2>
-		<p> We see an interesting cyclic pattern in this model and model 7. I am unsure why, it must have something to do with the low extinguish </br>
-		    rate and the fact that migration only occurs with the fire group state variable? It seems this only occurs in the tests where </br>
-		    the r_0 ratio is greater than 1. So perhaps it is a volitile system and sparks again when enough trees regreow ?</p>
-		<img src="./assets/images/Studio_Project(1).gif" alt="GIF 4">
-	</div>
-	
-	<div>
-		<h2>simulation 7: alpha = .001, beta = .19, gamma = .1, mrate = .05, inital burn 5000 trees. </h2>
-		<img src="./assets/images/Studio_Project.gif" alt="GIF 4">
-	</div>
-</body>
+<html>
+  <head>
+    <title>Generate Plot</title>
+  </head>
+  <body>
+    <h1>Generate Plot</h1>
+    <button onclick="generatePlot()">Generate Plot</button>
+    <br><br>
+    <img id="plot" src="">
+    <script>
+      function generatePlot() {
+        fetch('/generate_plot')
+          .then(response => {
+            console.log(response);
+            document.getElementById("plot").src = "/plot.png?" + new Date().getTime();
+          });
+      }
+    </script>
+  </body>
 </html>
